@@ -1,12 +1,13 @@
 pragma solidity ^0.7.0;
 
 import "./ENS.sol";
+import "./IReverseRegistrar.sol";
 
 abstract contract NameResolver {
     function setName(bytes32 node, string memory name) public virtual;
 }
 
-contract ReverseRegistrar {
+contract ReverseRegistrar is IReverseRegistrar{
     // namehash('addr.reverse')
     bytes32 public constant ADDR_REVERSE_NODE = 0x91d1777781884d03a6757a803996e38de2a42967fb37eeaca72729271025a9e2;
 
