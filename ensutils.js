@@ -217,7 +217,7 @@ var ensContract = web3.eth.contract([
     "type": "event"
   }
 ]);
-var ens = ensContract.at('0x314159265dd8dbb310642f98f50c066173c1259b');
+var ens = ensContract.at('0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e');
 
 var auctionRegistrarContract = web3.eth.contract([
   {
