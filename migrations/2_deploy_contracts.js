@@ -6,7 +6,7 @@ const FIFSRegistrar = artifacts.require('./FIFSRegistrar.sol');
 // not existed, it's valid to put it here.
 // TODO: align the contract name with the source code file name.
 const web3 = new (require('web3'))();
-const namehash = require('eth-ens-namehash');
+const namehash = require('eth-ens-namehash').hash;
 
 /**
  * Calculate root node hashes given the top level domain(tld)
